@@ -1,4 +1,6 @@
-package televisores;
+package taller3.televisores;
+
+
 
 public class TV {
 	private Marca marca;
@@ -45,7 +47,7 @@ public class TV {
     public int getCanal() {
     	return canal;
     }
-    public int getnumTV() {
+    public int getNumTv() {
     	return numTV;
     }
     public void turnOn() {
@@ -71,12 +73,9 @@ public class TV {
     	volumen++;
     }
     public void volumenDown() {
-    	if (estado == true && volumen<6)
+    	if (estado == true && volumen>1)
     	volumen--;
-    }
-    
-    
-    
-    
-	
+    }    
 }
+
+
