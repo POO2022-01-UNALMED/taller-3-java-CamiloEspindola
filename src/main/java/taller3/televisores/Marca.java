@@ -11,5 +11,4 @@ public class Marca {
 	public String getNombre() {
 		return nombre;
 	}
-	
 }
