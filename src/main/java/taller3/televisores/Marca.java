@@ -5,6 +5,7 @@ public class Marca {
 	public Marca(String Nombre) {
 		this.nombre = Nombre;
 	}
+	
 	public void setNombre(String Nombre) {
 		this.nombre = Nombre;
 	}

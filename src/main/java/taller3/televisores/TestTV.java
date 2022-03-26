@@ -2,28 +2,16 @@ package taller3.televisores;
 
 public class TestTV {
 	public static void main(String[] args) {
-		Marca marca1 = new Marca("Semsung");
-	    Marca marca2 = new Marca("Lj");
+        TV.setNumTV(0);
 		
-	    TV tv1 = new TV(marca1, true);
-	    TV tv2 = new TV(marca2, false);
+		Marca marca =  new Marca("Semsung");
+	   
+		TV tv1 =  new TV(marca, true);
+		TV tv2 =  new TV(marca, true);
+		TV tv3 =  new TV(marca, true);
+	    System.out.println(TV.getNumTV());
 	    
-	    tv1.setPrecio(2000);
-	    tv2.setCanal(90);
-	    tv1.setCanal(121);
-		tv2.setVolumen(7);
-		
-		Control control1 = new Control();
-		control1.enlazar(tv1);
-		control1.turnOff();
-		control1.setCanal(50);
-		control1.turnOn();
-		control1.canalUp();
-		control1.volumenUp();
-		
-	    System.out.println(tv2.getCanal());
-	    System.out.println(tv1.getPrecio());
-	    System.out.println(tv1.getMarca().getNombre());
-	    System.out.println(tv1.getCanal());
+	    //assertEquals(TV.getNumTV(), 3, "No estas contando el numero de objetos de tipo de TV que se van creando");
+    
 	}
-}
+	}

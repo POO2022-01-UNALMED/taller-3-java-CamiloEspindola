@@ -16,6 +16,7 @@ public class TV {
 	    this.estado = estado;
 	    numTV++;
 	}
+    
     // setters
     public void setMarca(Marca marca) {
     	this.marca = marca;
