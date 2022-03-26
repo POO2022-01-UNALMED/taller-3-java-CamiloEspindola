@@ -53,7 +53,7 @@ public class TV {
     public int getCanal() {
     	return canal;
     }
-    public static int  getNumTV() {
+    public static int getNumTV() {
     	return numTV;
     }
     public void turnOn() {
@@ -67,7 +67,7 @@ public class TV {
     	return estado;
     }
     public void canalUp() {
-    	if (estado == true && canal<119)
+    	if (estado == true && canal<120)
     	canal++;
     }
     public void canalDown() {
@@ -75,7 +75,7 @@ public class TV {
     	canal--;
     }
     public void volumenUp() {
-    	if (estado == true && volumen<6)
+    	if (estado == true && volumen<7)
     	volumen++;
     }
     public void volumenDown() {
